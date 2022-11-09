@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HappyPlants</title>
+    <link
+      rel="shortcut icon"
+      href="./assets/images/logo.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <script
+      src="https://kit.fontawesome.com/562206eaf4.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <div class="brand-title">
+        HappyPlants
+        <img class="logo" alt="Logo HappyPlants" src="./assets/images/logo.png" />
+      </div>
+      <div class="toggle-button" id="toggle-button">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <nav class="navbar" id="navbar">
+        <ul>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./guides.html">Guides</a></li>
+          <li>
+            <a class="active" href="./contact.html"
+              >Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <div class="breadscrum">
+        <a href="./index.html">Home</a> >
+        <a class="active-breadscrum" href="./contact.html">Contact</a>
+      </div>
+        <div class="main-header">
+          <h1>Contact</h1>
+          <p>
+            The page will notify if the user has
+        started filling the form and tries
+        to navigate away from it.
+        It will also clearly show if you have an unvalid email or left the textarea empty when pressing the "Send"-button.
+          </p>
+        </div>
+
+      <div class="main-content">
+
+
+          <div class="card-text">
+            <h2>Want to see more guides?</h2>
+            <p>Request a video guide below</p>
+          </div>
+
+          <div class="card">
+            <form class="card-form">
+              <div class="input-section">
+                <label for="email">Email</label>
+                <input required class="email-input" id="email" type="text"/>
+              </div>
+              <p class="error-email" id="error-email"></p>
+              <div class="input-section">
+                <label for="textarea">Request</label>
+                <textarea required name="textarea" id="textarea" cols="30" rows="10"></textarea>
+              </div>
+              <p class="error-request" id="error-request"></p>
+                <button class="button send-button" id="send-button">Send <i class="fa-solid fa-paper-plane"></i></button>
+                <p class="error-message" id="error-message"></p>
+            </form>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="footer-text">
+        <div class="brand-title__footer">
+          HappyPlants
+          <img class="logo" alt="Logo HappyPlants" src="./assets/images/logo.png" />
+        </div>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </p>
+      </div>
+      <div class="footer-contact">
+        <h3>Contact us</h3>
+        <p>Email: happyplants@example.com</p>
+        <p>Phone: +123 456 789</p>
+      </div>
+    </footer>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
